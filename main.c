@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 int MainFunctionality (int i){
-	return i;
+	return i != 5? i : i-1;	//Si i != 5 -> devuelve i, si no devuelve i-1
 }
 
 int main (){
@@ -10,7 +10,7 @@ int main (){
 	for (int = 0; i < 10; i++){
 		//Main functionality check
 		if(MainFunctionality(i) == i){
-			printf("SUCCESS: main functionality %d"\n, i);
+			printf("SUCCESS: main functionality %d\n", i);
 		} else {
 			printf("FAILED: main functionality %d\n", i);
 			ret = -1;
